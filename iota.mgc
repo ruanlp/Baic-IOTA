@@ -1,0 +1,1311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="com.iota.iri.service.dto.AbstractResponse" x="5028" y="902">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.iota.iri.storage.PersistenceProvider" x="5760" y="-2426">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.iota.iri.service.dto.AttachToTangleResponse"
+        x="5302" y="892">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.service.dto.AbstractResponse"/>
+    </Class>
+    <Class name="com.iota.iri.hash.Sponge" x="5844" y="255">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.iota.iri.hash.SpongeFactory.Mode" x="5905" y="1330">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.iota.iri.model.Tag" x="2678" y="-2342">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.model.Hashes"/>
+    </Class>
+    <Class name="com.iota.iri.service.dto.CheckConsistency" x="5324" y="996">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.service.dto.AbstractResponse"/>
+    </Class>
+    <Class name="com.iota.iri.conf.Configuration" x="4158" y="-2581">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.iota.iri.service.dto.GetNeighborsResponse" x="4702" y="1050">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.service.dto.AbstractResponse"/>
+        <Association
+            destinationClassName="com.iota.iri.service.dto.GetNeighborsResponse.Neighbor"
+            endpointName="neighbors" kind="Simple"/>
+        <Communication destinationClassName="com.iota.iri.network.Neighbor"/>
+        <Communication destinationClassName="com.iota.iri.service.dto.GetNeighborsResponse.Neighbor"/>
+    </Class>
+    <Class name="com.iota.iri.service.dto.AccessLimitedResponse"
+        x="5290" y="790">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.service.dto.AbstractResponse"/>
+    </Class>
+    <Class name="com.iota.iri.model.IntegerIndex" x="2112" y="-2834">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.storage.Indexable"/>
+        <Communication destinationClassName="com.iota.iri.utils.Serializer"/>
+    </Class>
+    <Class name="com.iota.iri.controllers.MilestoneViewModel" x="1058" y="-1464">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.iota.iri.model.Milestone"
+            endpointName="milestone" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.controllers.MilestoneViewModel"
+            endpointName="milestones" kind="Simple"/>
+        <Communication destinationClassName="com.iota.iri.storage.Tangle"/>
+        <Communication destinationClassName="com.iota.iri.controllers.StateDiffViewModel"/>
+        <Communication destinationClassName="com.iota.iri.model.IntegerIndex"/>
+    </Class>
+    <Class
+        name="com.iota.iri.network.replicator.ReplicatorSinkProcessor"
+        x="5068" y="-2872">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.iota.iri.network.TCPNeighbor"
+            endpointName="neighbor" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.network.replicator.ReplicatorSinkPool"
+            endpointName="replicatorSinkPool" kind="Simple"/>
+        <Communication destinationClassName="com.iota.iri.network.Neighbor"/>
+        <Communication destinationClassName="com.iota.iri.network.TCPNeighbor"/>
+    </Class>
+    <Class name="com.iota.iri.utils.Serializer" x="6062" y="866">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.iota.iri.service.dto.GetNodeInfoResponse" x="4686" y="1116">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.service.dto.AbstractResponse"/>
+        <Communication destinationClassName="com.iota.iri.model.Hash"/>
+    </Class>
+    <Class name="com.iota.iri.service.dto.IXIResponse" x="5362" y="1188">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.service.dto.AbstractResponse"/>
+    </Class>
+    <Class name="com.iota.iri.service.dto.GetInclusionStatesResponse"
+        x="4624" y="820">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.service.dto.AbstractResponse"/>
+    </Class>
+    <Class name="com.iota.iri.storage.Indexable" x="2758" y="-2534">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.iota.iri.LedgerValidator" x="6007" y="-1733">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.iota.iri.storage.Tangle"
+            endpointName="tangle" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.Milestone"
+            endpointName="milestone" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.network.TransactionRequester"
+            endpointName="transactionRequester" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.zmq.MessageQ"
+            endpointName="messageQ" kind="Simple"/>
+        <Communication destinationClassName="com.iota.iri.controllers.MilestoneViewModel"/>
+        <Communication destinationClassName="com.iota.iri.BundleValidator"/>
+        <Communication destinationClassName="com.iota.iri.zmq.MessageQ"/>
+        <Communication destinationClassName="com.iota.iri.network.TransactionRequester"/>
+        <Communication destinationClassName="com.iota.iri.Snapshot"/>
+        <Communication destinationClassName="com.iota.iri.model.Hash"/>
+        <Communication destinationClassName="com.iota.iri.controllers.StateDiffViewModel"/>
+        <Communication destinationClassName="com.iota.iri.controllers.TransactionViewModel"/>
+    </Class>
+    <Class name="com.iota.iri.controllers.AddressViewModel" x="2266" y="-2590">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.controllers.HashesViewModel"/>
+        <Association destinationClassName="com.iota.iri.model.Address"
+            endpointName="self" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.storage.Indexable"
+            endpointName="hash" kind="Simple"/>
+        <Communication destinationClassName="com.iota.iri.storage.Tangle"/>
+    </Class>
+    <Class name="com.iota.iri.service.dto.FindTransactionsResponse"
+        x="4624" y="978">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.service.dto.AbstractResponse"/>
+    </Class>
+    <Class name="com.iota.iri.service.dto.AbstractResponse.Emptyness"
+        x="4630" y="900">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.service.dto.AbstractResponse"/>
+    </Class>
+    <Class name="com.iota.iri.model.Milestone" x="1566" y="-2960">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.storage.Persistable"/>
+        <Association
+            destinationClassName="com.iota.iri.model.IntegerIndex"
+            endpointName="index" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.model.Hash"
+            endpointName="hash" kind="Simple"/>
+        <Communication destinationClassName="com.iota.iri.utils.Serializer"/>
+    </Class>
+    <Class
+        name="com.iota.iri.service.dto.GetTransactionsToApproveResponse"
+        x="4974" y="1222">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.service.dto.AbstractResponse"/>
+        <Communication destinationClassName="com.iota.iri.model.Hash"/>
+    </Class>
+    <Class name="com.iota.iri.controllers.TipsViewModel.FifoHashCache"
+        x="5731" y="1300">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.iota.iri.network.Neighbor" x="5034" y="-2588">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.iota.iri.network.Node.FIFOCache" x="5968" y="1080">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.iota.iri.BundleValidator" x="5890" y="1256">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="com.iota.iri.hash.SpongeFactory"/>
+        <Communication destinationClassName="com.iota.iri.hash.ISSInPlace"/>
+        <Communication destinationClassName="com.iota.iri.hash.Sponge"/>
+        <Communication destinationClassName="com.iota.iri.model.Hash"/>
+        <Communication destinationClassName="com.iota.iri.controllers.TransactionViewModel"/>
+        <Communication destinationClassName="com.iota.iri.controllers.BundleViewModel"/>
+    </Class>
+    <Class name="com.iota.iri.model.StateDiff" x="1438" y="-1950">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.storage.Persistable"/>
+    </Class>
+    <Class name="com.iota.iri.IRI" x="3450" y="-2720">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.iota.iri.model.Hash"
+            endpointName="TESTNET_COORDINATOR" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.Iota"
+            endpointName="iota" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.conf.Configuration"
+            endpointName="configuration" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.IXI"
+            endpointName="ixi" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.model.Hash"
+            endpointName="MAINNET_COORDINATOR" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.service.API"
+            endpointName="api" kind="Simple"/>
+        <Communication destinationClassName="com.iota.iri.IXI"/>
+        <Communication destinationClassName="com.iota.iri.service.API"/>
+        <Communication destinationClassName="com.iota.iri.Iota"/>
+        <Communication destinationClassName="com.iota.iri.conf.Configuration"/>
+    </Class>
+    <Class name="com.iota.iri.network.TCPNeighbor" x="5210" y="-2762">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.network.Neighbor"/>
+    </Class>
+    <Class
+        name="com.iota.iri.network.replicator.ReplicatorSourceProcessor"
+        x="4972" y="-2768">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.iota.iri.network.Node"
+            endpointName="node" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.network.TCPNeighbor"
+            endpointName="neighbor" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.network.replicator.ReplicatorSinkPool"
+            endpointName="replicatorSinkPool" kind="Simple"/>
+        <Communication destinationClassName="com.iota.iri.network.Neighbor"/>
+        <Communication destinationClassName="com.iota.iri.network.replicator.ReplicatorSinkPool"/>
+        <Communication destinationClassName="com.iota.iri.network.Node"/>
+        <Communication destinationClassName="com.iota.iri.network.TCPNeighbor"/>
+    </Class>
+    <Class
+        name="com.iota.iri.storage.rocksDB.RocksDBPersistenceProvider.MyFunction"
+        x="5752" y="668">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.iota.iri.service.dto.AddedNeighborsResponse"
+        x="4880" y="656">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.service.dto.AbstractResponse"/>
+    </Class>
+    <Class name="com.iota.iri.service.dto.ErrorResponse" x="5222" y="716">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.service.dto.AbstractResponse"/>
+    </Class>
+    <Class name="com.iota.iri.IxiEvent" x="6166" y="1205">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.iota.iri.network.replicator.ReplicatorSinkPool"
+        x="4726" y="-2910">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.iota.iri.network.Node"
+            endpointName="node" kind="Simple"/>
+        <Communication destinationClassName="com.iota.iri.network.Node"/>
+        <Communication destinationClassName="com.iota.iri.network.TCPNeighbor"/>
+    </Class>
+    <Class name="com.iota.iri.hash.SpongeFactory" x="5885" y="1446">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.iota.iri.zmq.MessageQ" x="6344" y="-1342">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.iota.iri.service.dto.GetBalancesResponse" x="4642" y="726">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.service.dto.AbstractResponse"/>
+    </Class>
+    <Class
+        name="com.iota.iri.storage.rocksDB.RocksDBPersistenceProvider.MyRunnable"
+        x="5750" y="612">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.iota.iri.hash.Curl" x="5505" y="362">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.hash.Sponge"/>
+    </Class>
+    <Class name="com.iota.iri.model.Bundle" x="3066" y="-2471">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.model.Hashes"/>
+    </Class>
+    <Class name="com.iota.iri.controllers.TagViewModel" x="2533" y="-2810">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.controllers.HashesViewModel"/>
+        <Association destinationClassName="com.iota.iri.model.Tag"
+            endpointName="self" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.storage.Indexable"
+            endpointName="hash" kind="Simple"/>
+        <Communication destinationClassName="com.iota.iri.storage.Tangle"/>
+    </Class>
+    <Class name="com.iota.iri.Iota" x="3436" y="-2371">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.iota.iri.model.Hash"
+            endpointName="TESTNET_COORDINATOR" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.model.Hash"
+            endpointName="coordinator" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.storage.Tangle"
+            endpointName="tangle" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.conf.Configuration"
+            endpointName="configuration" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.model.Hash"
+            endpointName="MAINNET_COORDINATOR" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.service.TipsManager"
+            endpointName="tipsManager" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.network.Node"
+            endpointName="node" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.TransactionValidator"
+            endpointName="transactionValidator" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.Milestone"
+            endpointName="milestone" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.network.TransactionRequester"
+            endpointName="transactionRequester" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.network.replicator.Replicator"
+            endpointName="replicator" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.controllers.TipsViewModel"
+            endpointName="tipsViewModel" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.network.UDPReceiver"
+            endpointName="udpReceiver" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.LedgerValidator"
+            endpointName="ledgerValidator" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.zmq.MessageQ"
+            endpointName="messageQ" kind="Simple"/>
+        <Communication destinationClassName="com.iota.iri.network.replicator.Replicator"/>
+        <Communication destinationClassName="com.iota.iri.storage.Tangle"/>
+        <Communication destinationClassName="com.iota.iri.Milestone"/>
+        <Communication destinationClassName="com.iota.iri.network.TransactionRequester"/>
+        <Communication destinationClassName="com.iota.iri.controllers.ApproveeViewModel"/>
+        <Communication destinationClassName="com.iota.iri.conf.Configuration"/>
+        <Communication destinationClassName="com.iota.iri.controllers.BundleViewModel"/>
+        <Communication destinationClassName="com.iota.iri.network.UDPReceiver"/>
+        <Communication destinationClassName="com.iota.iri.TransactionValidator"/>
+        <Communication destinationClassName="com.iota.iri.network.Node"/>
+        <Communication destinationClassName="com.iota.iri.controllers.TagViewModel"/>
+        <Communication destinationClassName="com.iota.iri.controllers.AddressViewModel"/>
+        <Communication destinationClassName="com.iota.iri.service.TipsManager"/>
+        <Communication destinationClassName="com.iota.iri.controllers.TransactionViewModel"/>
+    </Class>
+    <Class name="com.iota.iri.hash.PearlDiver" x="2640" y="-3030">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.iota.iri.hash.PearlDiver.State"
+            endpointName="state" kind="Simple"/>
+    </Class>
+    <Class name="com.iota.iri.controllers.TipsViewModel" x="4153" y="-2274">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.iota.iri.hash.ISS" x="5859" y="1207">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="com.iota.iri.hash.SpongeFactory"/>
+        <Communication destinationClassName="com.iota.iri.hash.ISSInPlace"/>
+        <Communication destinationClassName="com.iota.iri.hash.Sponge"/>
+        <Communication destinationClassName="com.iota.iri.model.Hash"/>
+    </Class>
+    <Class name="com.iota.iri.network.replicator.Replicator" x="4124" y="-3050">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.iota.iri.network.replicator.ReplicatorSourcePool"
+            endpointName="replicatorSourcePool" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.network.replicator.ReplicatorSinkPool"
+            endpointName="replicatorSinkPool" kind="Simple"/>
+        <Communication destinationClassName="com.iota.iri.network.replicator.ReplicatorSinkPool"/>
+        <Communication destinationClassName="com.iota.iri.network.replicator.ReplicatorSourcePool"/>
+    </Class>
+    <Class name="com.iota.iri.Milestone" x="3238" y="-1128">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.iota.iri.model.Hash"
+            endpointName="latestMilestone" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.model.Hash"
+            endpointName="analyzedMilestoneCandidates" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.TransactionValidator"
+            endpointName="transactionValidator" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.model.Hash"
+            endpointName="coordinator" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.storage.Tangle"
+            endpointName="tangle" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.model.Hash"
+            endpointName="latestSolidSubtangleMilestone" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.LedgerValidator"
+            endpointName="ledgerValidator" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.Snapshot"
+            endpointName="latestSnapshot" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.zmq.MessageQ"
+            endpointName="messageQ" kind="Simple"/>
+        <Communication destinationClassName="com.iota.iri.controllers.MilestoneViewModel"/>
+        <Communication destinationClassName="com.iota.iri.BundleValidator"/>
+        <Communication destinationClassName="com.iota.iri.hash.ISS"/>
+        <Communication destinationClassName="com.iota.iri.TransactionValidator"/>
+        <Communication destinationClassName="com.iota.iri.utils.Converter"/>
+        <Communication destinationClassName="com.iota.iri.LedgerValidator"/>
+        <Communication destinationClassName="com.iota.iri.model.Hash"/>
+        <Communication destinationClassName="com.iota.iri.controllers.TransactionViewModel"/>
+    </Class>
+    <Class name="com.iota.iri.service.API" x="2892" y="-3046">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.iota.iri.Iota"
+            endpointName="instance" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.IXI"
+            endpointName="ixi" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.hash.PearlDiver"
+            endpointName="pearlDiver" kind="Simple"/>
+        <Communication destinationClassName="com.iota.iri.service.dto.AbstractResponse"/>
+        <Communication destinationClassName="com.iota.iri.service.dto.AttachToTangleResponse"/>
+        <Communication destinationClassName="com.iota.iri.service.dto.CheckConsistency"/>
+        <Communication destinationClassName="com.iota.iri.conf.Configuration"/>
+        <Communication destinationClassName="com.iota.iri.model.Hash"/>
+        <Communication destinationClassName="com.iota.iri.service.dto.GetNeighborsResponse"/>
+        <Communication destinationClassName="com.iota.iri.service.dto.AccessLimitedResponse"/>
+        <Communication destinationClassName="com.iota.iri.service.dto.ExceptionResponse"/>
+        <Communication destinationClassName="com.iota.iri.IXI"/>
+        <Communication destinationClassName="com.iota.iri.service.dto.GetNodeInfoResponse"/>
+        <Communication destinationClassName="com.iota.iri.service.dto.GetInclusionStatesResponse"/>
+        <Communication destinationClassName="com.iota.iri.utils.Converter"/>
+        <Communication destinationClassName="com.iota.iri.LedgerValidator"/>
+        <Communication destinationClassName="com.iota.iri.service.dto.GetTrytesResponse"/>
+        <Communication destinationClassName="com.iota.iri.service.dto.FindTransactionsResponse"/>
+        <Communication destinationClassName="com.iota.iri.service.TipsManager"/>
+        <Communication destinationClassName="com.iota.iri.controllers.TransactionViewModel"/>
+        <Communication destinationClassName="com.iota.iri.service.dto.GetTransactionsToApproveResponse"/>
+        <Communication destinationClassName="com.iota.iri.service.dto.RemoveNeighborsResponse"/>
+        <Communication destinationClassName="com.iota.iri.service.dto.AddedNeighborsResponse"/>
+        <Communication destinationClassName="com.iota.iri.service.dto.ErrorResponse"/>
+        <Communication destinationClassName="com.iota.iri.service.dto.GetTipsResponse"/>
+        <Communication destinationClassName="com.iota.iri.TransactionValidator"/>
+        <Communication destinationClassName="com.iota.iri.service.dto.GetBalancesResponse"/>
+        <Communication destinationClassName="com.iota.iri.Snapshot"/>
+        <Communication destinationClassName="com.iota.iri.network.Node"/>
+        <Communication destinationClassName="com.iota.iri.hash.PearlDiver"/>
+    </Class>
+    <Class name="com.iota.iri.model.Hash" x="3050" y="-1911">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.storage.Indexable"/>
+        <Communication destinationClassName="com.iota.iri.storage.Indexable"/>
+        <Communication destinationClassName="com.iota.iri.utils.Converter"/>
+        <Communication destinationClassName="com.iota.iri.hash.Sponge"/>
+    </Class>
+    <Class
+        name="com.iota.iri.storage.rocksDB.RocksDBPersistenceProvider.DoubleFunction"
+        x="5744" y="556">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.iota.iri.service.dto.GetNeighborsResponse.Neighbor"
+        x="4456" y="1150">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="com.iota.iri.network.Neighbor"/>
+    </Class>
+    <Class name="com.iota.iri.service.dto.ExceptionResponse" x="5060" y="692">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.service.dto.AbstractResponse"/>
+    </Class>
+    <Class name="com.iota.iri.IXI" x="3653" y="-3048">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.iota.iri.Iota"
+            endpointName="iota" kind="Simple"/>
+    </Class>
+    <Class name="com.iota.iri.utils.MapIdentityManager" x="5848" y="916">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="com.iota.iri.hash.SpongeFactory"/>
+        <Communication destinationClassName="com.iota.iri.utils.Converter"/>
+        <Communication destinationClassName="com.iota.iri.hash.Sponge"/>
+    </Class>
+    <Class name="com.iota.iri.hash.Kerl" x="5987" y="379">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.hash.Sponge"/>
+    </Class>
+    <Class name="com.iota.iri.utils.Converter" x="5874" y="824">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.iota.iri.storage.Persistable" x="1252" y="-2738">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.iota.iri.storage.FileExportProvider" x="6588" y="-2412">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.storage.PersistenceProvider"/>
+        <Communication destinationClassName="com.iota.iri.utils.Converter"/>
+    </Class>
+    <Class name="com.iota.iri.service.CallableRequest" x="5794" y="1098">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.iota.iri.model.Transaction" x="1230" y="-2410">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.storage.Persistable"/>
+        <Association destinationClassName="com.iota.iri.model.Hash"
+            endpointName="obsoleteTag" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.model.Hash"
+            endpointName="address" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.model.Hash"
+            endpointName="tag" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.model.Hash"
+            endpointName="trunk" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.model.Hash"
+            endpointName="bundle" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.model.Hash"
+            endpointName="branch" kind="Simple"/>
+        <Communication destinationClassName="com.iota.iri.utils.Serializer"/>
+    </Class>
+    <Class name="com.iota.iri.network.UDPNeighbor" x="5284" y="-2554">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.network.Neighbor"/>
+        <Communication destinationClassName="com.iota.iri.network.Neighbor"/>
+    </Class>
+    <Class name="com.iota.iri.service.dto.GetTrytesResponse" x="5216" y="1240">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.service.dto.AbstractResponse"/>
+    </Class>
+    <Class name="com.iota.iri.service.TipsManager" x="3608" y="-1984">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.iota.iri.TransactionValidator"
+            endpointName="transactionValidator" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.storage.Tangle"
+            endpointName="tangle" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.Milestone"
+            endpointName="milestone" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.controllers.TipsViewModel"
+            endpointName="tipsViewModel" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.LedgerValidator"
+            endpointName="ledgerValidator" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.zmq.MessageQ"
+            endpointName="messageQ" kind="Simple"/>
+        <Communication destinationClassName="com.iota.iri.controllers.TipsViewModel"/>
+        <Communication destinationClassName="com.iota.iri.controllers.MilestoneViewModel"/>
+        <Communication destinationClassName="com.iota.iri.TransactionValidator"/>
+        <Communication destinationClassName="com.iota.iri.zmq.MessageQ"/>
+        <Communication destinationClassName="com.iota.iri.service.API"/>
+        <Communication destinationClassName="com.iota.iri.LedgerValidator"/>
+        <Communication destinationClassName="com.iota.iri.controllers.ApproveeViewModel"/>
+        <Communication destinationClassName="com.iota.iri.model.Hash"/>
+        <Communication destinationClassName="com.iota.iri.controllers.TransactionViewModel"/>
+    </Class>
+    <Class name="com.iota.iri.controllers.TransactionViewModel" x="1740" y="-2662">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.iota.iri.controllers.AddressViewModel"
+            endpointName="address" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.controllers.ApproveeViewModel"
+            endpointName="approovers" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.controllers.TransactionViewModel"
+            endpointName="trunk" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.controllers.TransactionViewModel"
+            endpointName="branch" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.model.Hash"
+            endpointName="hash" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.model.Transaction"
+            endpointName="transaction" kind="Simple"/>
+        <Communication destinationClassName="com.iota.iri.storage.Tangle"/>
+        <Communication destinationClassName="com.iota.iri.utils.Converter"/>
+        <Communication destinationClassName="com.iota.iri.controllers.TagViewModel"/>
+        <Communication destinationClassName="com.iota.iri.controllers.ApproveeViewModel"/>
+        <Communication destinationClassName="com.iota.iri.controllers.AddressViewModel"/>
+        <Communication destinationClassName="com.iota.iri.model.Hash"/>
+    </Class>
+    <Class name="com.iota.iri.controllers.HashesViewModel" x="1832" y="404">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.iota.iri.utils.Pair" x="5944" y="724">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.iota.iri.service.dto.RemoveNeighborsResponse"
+        x="4692" y="656">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.service.dto.AbstractResponse"/>
+    </Class>
+    <Class name="com.iota.iri.storage.ZmqPublishProvider" x="6598" y="-2082">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.storage.PersistenceProvider"/>
+        <Association destinationClassName="com.iota.iri.zmq.MessageQ"
+            endpointName="messageQ" kind="Simple"/>
+        <Communication destinationClassName="com.iota.iri.zmq.MessageQ"/>
+    </Class>
+    <Class name="com.iota.iri.storage.Tangle" x="5388" y="-2260">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.iota.iri.storage.PersistenceProvider"
+            endpointName="persistenceProviders" kind="Simple"/>
+        <Communication destinationClassName="com.iota.iri.storage.PersistenceProvider"/>
+    </Class>
+    <Class name="com.iota.iri.Milestone.Validity" x="6332" y="1212">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.iota.iri.hash.ISSInPlace" x="5738" y="1196">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="com.iota.iri.hash.SpongeFactory"/>
+        <Communication destinationClassName="com.iota.iri.hash.Sponge"/>
+    </Class>
+    <Class name="com.iota.iri.network.TransactionRequester" x="5104" y="-1776">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.iota.iri.storage.Tangle"
+            endpointName="tangle" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.model.Hash"
+            endpointName="milestoneTransactionsToRequest" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.model.Hash"
+            endpointName="transactionsToRequest" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.zmq.MessageQ"
+            endpointName="messageQ" kind="Simple"/>
+        <Communication destinationClassName="com.iota.iri.zmq.MessageQ"/>
+        <Communication destinationClassName="com.iota.iri.model.Hash"/>
+        <Communication destinationClassName="com.iota.iri.controllers.TransactionViewModel"/>
+    </Class>
+    <Class name="com.iota.iri.model.Address" x="2660" y="467">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.model.Hashes"/>
+    </Class>
+    <Class
+        name="com.iota.iri.storage.rocksDB.RocksDBPersistenceProvider"
+        x="6582" y="-2992">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.storage.PersistenceProvider"/>
+        <Communication destinationClassName="com.iota.iri.storage.Indexable"/>
+        <Communication destinationClassName="com.iota.iri.storage.Persistable"/>
+    </Class>
+    <Class name="com.iota.iri.model.Hashes" x="2964" y="-2364">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.storage.Persistable"/>
+        <Association destinationClassName="com.iota.iri.model.Hash"
+            endpointName="set" kind="Simple"/>
+    </Class>
+    <Class name="com.iota.iri.hash.PearlDiver.State" x="2496" y="-2986">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.iota.iri.controllers.ApproveeViewModel" x="2882" y="-2745">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.controllers.HashesViewModel"/>
+        <Association destinationClassName="com.iota.iri.model.Approvee"
+            endpointName="self" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.storage.Indexable"
+            endpointName="hash" kind="Simple"/>
+        <Communication destinationClassName="com.iota.iri.storage.Tangle"/>
+    </Class>
+    <Class name="com.iota.iri.utils.SlackBotFeed" x="6056" y="956">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.iota.iri.controllers.StateDiffViewModel" x="1676" y="-1871">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.iota.iri.model.StateDiff"
+            endpointName="stateDiff" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.model.Hash"
+            endpointName="hash" kind="Simple"/>
+        <Communication destinationClassName="com.iota.iri.storage.Tangle"/>
+    </Class>
+    <Class name="com.iota.iri.controllers.BundleViewModel" x="2965" y="-2592">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.controllers.HashesViewModel"/>
+        <Association destinationClassName="com.iota.iri.model.Bundle"
+            endpointName="self" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.storage.Indexable"
+            endpointName="hash" kind="Simple"/>
+        <Communication destinationClassName="com.iota.iri.storage.Tangle"/>
+    </Class>
+    <Class name="com.iota.iri.network.UDPReceiver" x="4190" y="-2810">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.iota.iri.network.Node"
+            endpointName="node" kind="Simple"/>
+        <Communication destinationClassName="com.iota.iri.network.Node"/>
+    </Class>
+    <Class name="com.iota.iri.network.replicator.ReplicatorSourcePool"
+        x="4518" y="-2756">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.iota.iri.network.Node"
+            endpointName="node" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.network.replicator.ReplicatorSinkPool"
+            endpointName="replicatorSinkPool" kind="Simple"/>
+    </Class>
+    <Class name="com.iota.iri.service.dto.GetTipsResponse" x="4904" y="1148">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.service.dto.AbstractResponse"/>
+    </Class>
+    <Class name="com.iota.iri.conf.Configuration.DefaultConfSettings"
+        x="6269" y="426">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.iota.iri.TransactionValidator" x="4510" y="-1546">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.iota.iri.storage.Tangle"
+            endpointName="tangle" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.network.TransactionRequester"
+            endpointName="transactionRequester" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.model.Hash"
+            endpointName="newSolidTransactionsOne" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.controllers.TipsViewModel"
+            endpointName="tipsViewModel" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.model.Hash"
+            endpointName="newSolidTransactionsTwo" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.zmq.MessageQ"
+            endpointName="messageQ" kind="Simple"/>
+        <Communication destinationClassName="com.iota.iri.controllers.TipsViewModel"/>
+        <Communication destinationClassName="com.iota.iri.network.TransactionRequester"/>
+        <Communication destinationClassName="com.iota.iri.controllers.ApproveeViewModel"/>
+        <Communication destinationClassName="com.iota.iri.model.Hash"/>
+        <Communication destinationClassName="com.iota.iri.controllers.TransactionViewModel"/>
+    </Class>
+    <Class name="com.iota.iri.service.ValidationException" x="6006" y="1206">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.iota.iri.Snapshot" x="4195" y="-359">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.iota.iri.model.Hash"
+            endpointName="approvedHashes" kind="Simple"/>
+        <Communication destinationClassName="com.iota.iri.hash.SpongeFactory"/>
+        <Communication destinationClassName="com.iota.iri.utils.Converter"/>
+        <Communication destinationClassName="com.iota.iri.hash.Sponge"/>
+    </Class>
+    <Class name="com.iota.iri.OsVariants" x="6025" y="1279">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.iota.iri.network.Node" x="4536" y="-2496">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.iota.iri.TransactionValidator"
+            endpointName="transactionValidator" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.storage.Tangle"
+            endpointName="tangle" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.Milestone"
+            endpointName="milestone" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.network.TransactionRequester"
+            endpointName="transactionRequester" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.conf.Configuration"
+            endpointName="configuration" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.network.Neighbor"
+            endpointName="neighbors" kind="Simple"/>
+        <Association
+            destinationClassName="com.iota.iri.controllers.TipsViewModel"
+            endpointName="tipsViewModel" kind="Simple"/>
+        <Association destinationClassName="com.iota.iri.zmq.MessageQ"
+            endpointName="messageQ" kind="Simple"/>
+        <Communication destinationClassName="com.iota.iri.network.Neighbor"/>
+        <Communication destinationClassName="com.iota.iri.controllers.TipsViewModel"/>
+        <Communication destinationClassName="com.iota.iri.TransactionValidator"/>
+        <Communication destinationClassName="com.iota.iri.zmq.MessageQ"/>
+        <Communication destinationClassName="com.iota.iri.network.TransactionRequester"/>
+        <Communication destinationClassName="com.iota.iri.conf.Configuration"/>
+        <Communication destinationClassName="com.iota.iri.model.Hash"/>
+        <Communication destinationClassName="com.iota.iri.controllers.TransactionViewModel"/>
+    </Class>
+    <Class name="com.iota.iri.model.Approvee" x="3187" y="-2586">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.iota.iri.model.Hashes"/>
+    </Class>
+    <Class
+        name="com.iota.iri.storage.rocksDB.RocksDBPersistenceProvider.IndexFunction"
+        x="5748" y="726">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+</ClassDiagram>
