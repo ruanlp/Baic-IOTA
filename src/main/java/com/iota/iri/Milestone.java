@@ -203,12 +203,12 @@ public class Milestone {
                                         ISS.NUMBER_OF_FRAGMENT_CHUNKS),
                                 signatureFragmentTrits)),
                                 transactionViewModel2.trits(), 0, index, NUMBER_OF_KEYS_IN_A_MILESTONE);
-                        if (testnet || (new Hash(merkleRoot)).equals(coordinator)) {
+                        //if (testnet || (new Hash(merkleRoot)).equals(coordinator)) {
                             new MilestoneViewModel(index, transactionViewModel.getHash()).store(tangle);
                             return VALID;
-                        } else {
-                            return INVALID;
-                        }
+                        //} else {
+                        //    return INVALID;
+                        //}
                     }
                 }
             }
