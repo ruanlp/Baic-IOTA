@@ -78,25 +78,6 @@ public class IRI {
             System.exit(-1);
         }
         
-        // TODO MT add
-        (new Thread(() -> {
-  			while (!shuttingDown) {
-  				try {
-  					log.info("Latest Milestone Tracker:API_HOST=["+configuration.string(DefaultConfSettings.API_HOST)+"],PORT=["+configuration.string(Configuration.DefaultConfSettings.PORT)+"]");
-  					new com.fr.test.LatestMilestoneTracker().start(
-  							configuration.string(DefaultConfSettings.API_HOST)
-  							,configuration.string(Configuration.DefaultConfSettings.PORT));
-  				} catch (Exception e) {
-  					log.error("Latest Milestone Tracker:", e);
-  				} finally {
-  					try {
-  	                    Thread.sleep(60*1000);
-  	                } catch (InterruptedException e) {
-  	                }
-  				}
-			}
-		}, "Latest Milestone Tracker")).start();
-        
         log.info("IOTA Node initialised correctly.");
     }
 
